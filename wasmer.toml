@@ -1,0 +1,17 @@
+[package]
+name = "flexletsaero/magistrala-mqtt"
+version = "0.1.0"
+description = "Magistrala MQTT Adapter on WASIX"
+
+[[module]]
+name = "mqtt-adapter"
+source = "mqtt.wasm"
+abi = "wasix"
+
+[[command]]
+name = "run"
+module = "mqtt-adapter"
+runner = "https://webc.org/runner/wasix"
+
+[fs]
+"/etc" = "etc" # If you have config files
