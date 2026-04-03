@@ -1,0 +1,5 @@
+---
+kind: wasmer.io/App.v0
+name: magistrala-iot-dashboard
+package:
+  image: ghcr.io/absmach/magistrala/ui-mg:latest
